@@ -1,4 +1,4 @@
-# 🚀 NEXT PATH – DevOps Infrastructure  
+#  NEXT PATH – DevOps Infrastructure  
 ### Global Solution – DevOps Tools & Cloud Computing  
 ### FIAP – Engenharia de Software – 2025  
 
@@ -17,7 +17,7 @@ A entrega inclui:
 
 ---
 
-## 📌 1. Objetivo do Projeto (NEXT PATH)
+##  1. Objetivo do Projeto (NEXT PATH)
 
 O **NEXT PATH** é o ambiente técnico da plataforma educacional que auxiliará usuários no desenvolvimento profissional, com APIs, dashboards e integrações com IA.
 
@@ -33,16 +33,16 @@ O objetivo da GS é demonstrar competências de *Cloud Computing + DevOps*, cria
 
 ---
 
-## 📌 2. Arquitetura do Projeto
+##  2. Arquitetura do Projeto
 
-### 🟦 VM Windows – EC2
+###  VM Windows – EC2
 - Windows Server 2025 Datacenter  
 - Porta: 3389 (RDP)  
 - Utilização: administração e validações
 
 ---
 
-### 🟩 VM Linux – EC2 (Ubuntu)
+### VM Linux – EC2 (Ubuntu)
 - Ubuntu Server 24.04 LTS  
 - Portas abertas:  
   - 22 (SSH)  
@@ -54,7 +54,7 @@ O objetivo da GS é demonstrar competências de *Cloud Computing + DevOps*, cria
 
 ---
 
-### 🟧 Banco de Dados – MySQL
+###  Banco de Dados – MySQL
 - Banco: `nextpath_db`  
 - Usuário: `nextpath_user`  
 - Permissões completas  
@@ -62,7 +62,7 @@ O objetivo da GS é demonstrar competências de *Cloud Computing + DevOps*, cria
 
 ---
 
-## 📌 3. Prints de Evidência
+##  3. Prints de Evidência
 
 As imagens estão na pasta:
 
@@ -76,7 +76,7 @@ Incluindo:
 
 ---
 
-## 📌 4. Instalação – Ubuntu
+##  4. Instalação – Ubuntu
 
 ```bash
 sudo apt update -y
@@ -85,7 +85,7 @@ sudo apt upgrade -y
 sudo apt install mysql-server -y
 sudo mysql_secure_installation
 
-📌 6. MySQL – Configuração
+📌 . MySQL – Configuração
 
 Entrar no MySQL:
 
@@ -107,19 +107,18 @@ Permissões:
 GRANT ALL PRIVILEGES ON *.* TO 'nextpath_user'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
-📌 7. CRUD – Banco Next Path
+ 7. CRUD – Banco Next Path
 INSERT INTO alunos (nome, idade) VALUES ('Gabriel', 22);
 SELECT * FROM alunos;
 UPDATE alunos SET idade = 23 WHERE nome = 'Gabriel';
 DELETE FROM alunos WHERE nome = 'Gabriel';
-
-📌 8. Docker
+ 8. Docker
 sudo apt install ca-certificates curl gnupg -y
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo usermod -aG docker $USER
 docker run hello-world
 
-📌 9. Conclusão
+ 9. Conclusão
 
 Infraestrutura NEXT PATH implantada com sucesso:
 
